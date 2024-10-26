@@ -1,0 +1,11 @@
+/* src/components/Header.css */
+.header {
+    background-color: #333;
+    color: orange;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid purple;
+    font-family: 'Creepster', cursive; /* 할로윈 느낌의 폰트 사용 */
+    font-size: 1.5em; /* 폰트 크기 조정 */
+  }
+  

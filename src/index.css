@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: orange;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 5px solid purple;
+  font-family: 'Creepster', cursive; /* 할로윈 느낌의 폰트 사용 */
+  font-size: 2em; /* 폰트 크기 조정 */
+}
+
+.quiz {
+  background-color: #444;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.quiz p {
+  color: yellow; /* 힌트와 시도 횟수 색상 */
+  margin-top: 10px;
+}
+
+.quiz h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.quiz input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.quiz button {
+  background-color: orange;
+  color: #222;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.quiz button:hover {
+  background-color: #ffcc00;
+}
+
+.result {
+  background-color: #444;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.result h2 {
+  font-size: 1.5em;
+}
+
+.live-preview {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #ffcc00; /* 강조된 테두리 */
+  background-color: #333; /* 어두운 배경 */
+  border-radius: 10px;
+  overflow: auto; /* 내용이 넘칠 경우 스크롤 가능 */
+}
+.answer-block {
+  background-color: #333; /* 어두운 배경 */
+  border: 2px solid #ffcc00; /* 강조된 테두리 */
+  border-radius: 10px; /* 둥근 모서리 */
+  padding: 20px; /* 여백 */
+  margin-top: 20px; /* 위쪽 여백 */
+}
+
+.answer-block h3 {
+  color: #ffcc00; /* 제목 색상 */
+}
+
+.answer-block pre {
+  margin: 0; /* 기본 여백 제거 */
+  color: #00ff00; /* 코드 색상 */
+  font-family: 'Courier New', Courier, monospace; /* 고정폭 폰트 */
+  white-space: pre-wrap; /* 줄바꿈 처리 */
+}
+
+.live-preview h3 {
+  color: #ffcc00; /* 제목 색상 */
+}
+
+.live-preview pre {
+  margin: 0; /* 기본 여백 제거 */
+  color: #00ff00; /* 코드 색상 */
+  font-family: 'Courier New', Courier, monospace; /* 고정폭 폰트 */
+  white-space: pre-wrap; /* 줄바꿈 처리 */
+}
+.panel-container {
+  display: flex; /* Flexbox 사용 */
+  justify-content: space-between; /* 양쪽 끝으로 배치 */
+  margin: 20px; /* 여백 */
+}
+
+.panel {
+  background-color: #444; /* 배경 색상 */
+  color: #fff; /* 글자 색상 */
+  border: 2px solid #ffcc00; /* 테두리 색상 */
+  border-radius: 10px; /* 둥근 모서리 */
+  padding: 20px; /* 내부 여백 */
+  width: 48%; /* 너비 조정 */
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #bbb;
+}
+
+.easter-egg-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.easter-egg-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 24px;
+  transition: background-color 0.3s;
+  margin: 0 5px; /* 박스 간격 조정 */
+}
+
+.easter-egg-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.easter-egg-box {
+  width: 60px; /* 박스의 너비 조정 */
+  height: 60px; /* 박스의 높이 조정 */
+  display: flex;
+  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  font-size: 24px; /* 이모티콘 크기 조정 */
+  transition: background-color 0.3s ease;
+}
+
+.easter-egg-animation {
+  font-size: 24px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+.game-description {
+  animation: fadeIn 2s ease-in-out;
+  background-color: #222;
+  color: #ffcc00;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 기존 CSS 유지 */
+.easter-egg-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.easter-egg-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: background-color 0.3s ease;
+  position: relative; /* 메시지 위치를 위해 상대 위치 설정 */
+}
+
+.emoji {
+  font-size: 24px; /* 이모티콘 크기 조정 */
+}
+
+.easter-egg-message {
+  position: absolute; /* 메시지를 박스 안에 위치시키기 위해 절대 위치 설정 */
+  top: 70px; /* 박스 아래에 위치 */
+  background-color: rgba(255, 255, 255, 0.9); /* 배경색 추가 */
+  padding: 5px;
+  border-radius: 5px;
+  transition: opacity 0.5s ease-in-out;
+}
+
