@@ -5,7 +5,8 @@ import './Header.css'; // CSS 파일 import
 const Header = () => {
   return (
     <header className="header">
-      <h1>🎃 압구정코딩컨설팅 할로윈 이벤트 🎃</h1>
+      <h1>🎃 Halloween Challenge🎃 </h1>
+        <h3>made by Students</h3>
     </header>
   );
 };

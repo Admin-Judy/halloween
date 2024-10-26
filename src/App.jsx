@@ -130,7 +130,7 @@ const App = () => {
           <h2>{questions[currentQuestion].question}</h2>
           <div className="panel-container">
             <div className="panel">
-              <h3>답변 입력:</h3>
+              <h3>답변 입력</h3>
               <CodeMirror
                 value={userAnswer}
                 options={{
