@@ -32,6 +32,18 @@
     text-align: center;
     margin-bottom: 20px;
   }
+
+  h2 {
+    color: #ffcc00; /
+  }
+  
+  h3 {
+    color: darkorange; /* 원하는 색상으로 변경 */
+  }
+
+  h4 {
+    color: white; /
+  }
   
   @keyframes fadeIn {
     0% {
